@@ -1,0 +1,6 @@
+
+<img  (load)="imgLoaded()" (error)="imgError()" [src]="imagen" *ngIf="imagen; else paila" >
+
+<ng-template #paila>
+  <img  [src]="imagenPaila" alt="">
+</ng-template>
